@@ -1,0 +1,33 @@
+<section class="hero" aria-labelledby="dish-title">
+  <div class="container">
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li><a href="/">Home</a></li>
+        <li><a href="/menu/">Menu</a></li>
+        <li><span aria-current="page">{{ dish.name }}</span></li>
+      </ol>
+    </nav>
+    <p class="eyebrow">Pure Veg Cloud Kitchen | Paschim Vihar</p>
+    <h1 id="dish-title">{{ dish.name }} in Paschim Vihar</h1>
+    <p class="subtext">{{ dish.description }}</p>
+    <div class="button-row">
+      <a class="btn btn-primary" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer">Order on Zomato</a>
+      <a class="btn btn-secondary" href="/menu/">View Menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="dish-details-title">
+  <div class="container">
+    <article class="card dish-card">
+      <img class="dish-image" src="/assets/images/{{ dish.image }}" width="640" height="480" loading="lazy" decoding="async" alt="{{ dish.alt }}">
+      <div class="dish-row">
+        <h2 id="dish-details-title">{{ dish.name }}</h2>
+        <span class="price">?{{ dish.price }}</span>
+      </div>
+      {% if dish.badge %}<span class="badge">{{ dish.badge }}</span>{% endif %}
+      <p>{{ dish.longDescription }}</p>
+      <p class="mini">Explore <a href="/menu/chole-rice/">Chole Rice</a>, <a href="/menu/rajma-rice/">Rajma Chawal</a>, and more on our <a href="/menu/">menu page</a>.</p>
+    </article>
+  </div>
+</section>

@@ -1,4 +1,4 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
 
 Sitemap: https://www.annapurnarasoi.sitelytc.com/sitemap.xml

@@ -1,0 +1,103 @@
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container">
+    <p class="eyebrow">Cloud Kitchen in Paschim Vihar, New Delhi</p>
+    <p class="trust-line">4.8? Rated Pure Veg Cloud Kitchen in Paschim Vihar</p>
+    <h1 id="hero-title">Best Home-Style Veg Food in Paschim Vihar</h1>
+    <p class="subtext">Freshly prepared Rajma Chawal, Chole Rice, Aloo Paratha, and Poori Aloo with hygienic packaging and fast delivery.<br>Daily lunch and dinner meals for families, office teams, and regular vegetarian food lovers.</p>
+    <div class="button-row">
+      <a class="btn btn-primary" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer" aria-label="Order veg food on Zomato">Order on Zomato</a>
+      <a class="btn btn-secondary" href="/menu/" aria-label="View full menu">View Full Menu</a>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="top-dishes">
+  <div class="container">
+    <h2 id="top-dishes">Top Veg Dishes in Paschim Vihar</h2>
+    <div class="grid grid-4">
+      {% for dish in site.dishes %}
+      <article class="card dish-card">
+        <img class="dish-image" src="/assets/images/{{ dish.image }}" width="640" height="480" loading="lazy" decoding="async" alt="{{ dish.alt }}">
+        <div class="dish-row">
+          <h3><a href="/menu/{{ dish.slug }}/">{{ dish.name }}</a></h3>
+          <span class="price">?{{ dish.price }}</span>
+        </div>
+        {% if dish.badge %}<span class="badge">{{ dish.badge }}</span>{% endif %}
+        <p>{{ dish.description }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section section-accent" aria-labelledby="combo-title">
+  <div class="container">
+    <h2 id="combo-title">Featured Combos</h2>
+    <div class="grid grid-2">
+      {% for combo in site.combos %}
+      <article class="card">
+        <div class="dish-row">
+          <h3>{{ combo.name }}</h3>
+          <span class="price">?{{ combo.price }}</span>
+        </div>
+        {% if combo.badge %}<span class="badge">{{ combo.badge }}</span>{% endif %}
+        <p>{{ combo.description }}</p>
+        <a class="btn btn-secondary" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer">Order This Combo</a>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="reviews-title">
+  <div class="container">
+    <h2 id="reviews-title">Why Customers in Paschim Vihar Love Annapurna Rasoi</h2>
+    <div class="grid grid-3">
+      {% for review in site.reviews %}
+      <article class="card">
+        <p class="review-stars" aria-label="Five star rating">?????</p>
+        <p>{{ review.text }}</p>
+        <p class="mini">{{ review.name }}</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+<section class="section seo-copy" aria-labelledby="authority-copy">
+  <div class="container">
+    <h2 id="authority-copy">Best Home-Style Vegetarian Food in Paschim Vihar</h2>
+    <div class="card">
+      <p>Annapurna Rasoi is built for customers who want reliable, everyday <strong>veg food in Paschim Vihar</strong> without compromising on freshness or taste. We are a dedicated <strong>pure veg cloud kitchen</strong> focused on home-style North Indian meals that fit modern schedules. Instead of overcomplicated dishes, our menu prioritizes comfort classics that people can order regularly for lunch and dinner. From professionals who need a quick meal between meetings to families planning evening food, our kitchen is designed for consistent preparation, hygienic standards, and dependable delivery performance. Customers searching for <strong>vegetarian food delivery</strong> in West Delhi usually want food that feels familiar, not heavy, and arrives in good condition. That is exactly where our daily cooking process and practical menu structure make a difference.</p>
+      <p>Our most loved dishes are <strong>Rajma Chawal</strong> and <strong>Chole Rice</strong>, both prepared with balanced spice profiles for daily eating. Rajma gravy is slow-cooked for depth, paired with steamed rice, and packed to preserve texture during travel. Chole Rice is prepared for customers who prefer richer Punjabi flavor with a filling portion. Alongside these, Aloo Paratha and Poori Aloo offer traditional options for customers who enjoy classic comfort meals. We serve these dishes consistently because local demand in Paschim Vihar is clear: people want dependable taste, clean packaging, and fair pricing. Every order follows a kitchen workflow that prioritizes freshness at dispatch, so meals are delivered with quality intact.</p>
+      <p>Our service also supports routine <strong>lunch delivery in Paschim Vihar</strong> for office-goers and work-from-home customers. Weekday lunch is one of the strongest ordering windows, so we keep menu flow simple and value-focused through bowls and combos. Families ordering in the evening choose us for practical meal combinations that are filling and easy to share. Since we operate as a cloud kitchen, we focus entirely on delivery quality: food prep timing, safe packing, and quick handover to platform logistics. This delivery-first model helps us maintain stronger consistency than traditional dine-in operations trying to handle multiple formats. For local customers, that consistency builds trust.</p>
+      <p>If you are looking for home-style vegetarian food with reliable quality, Annapurna Rasoi remains a practical choice for daily meals. Whether you are ordering Rajma Chawal for comfort, Chole Rice for a hearty lunch, or a combo for family dinner, our promise stays the same: pure veg cooking, clean preparation, and dependable service in Paschim Vihar and nearby localities. Explore the <a href="/menu/">full menu</a> and place your order on Zomato in minutes.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section section-accent seo-copy" id="delivery-areas" aria-labelledby="delivery-areas-title">
+  <div class="container">
+    <h2 id="delivery-areas-title">Serving Fresh Veg Food Across Paschim Vihar &amp; Nearby Areas</h2>
+    <div class="card">
+      <p>We actively deliver in Paschim Vihar, Punjabi Bagh, Peera Garhi, Nangloi, Mianwali Nagar, and Rajouri Garden. Our daily operations are planned around office lunch demand, family dinner orders, and routine meal delivery requirements. Customers in nearby sectors choose Annapurna Rasoi for quick dispatch, hygienic packaging, and familiar home-style flavor that works for regular ordering.</p>
+      <p>Whether you need a dependable weekday lunch bowl or a complete dinner combo, our menu is structured for convenience and value. Browse dishes on the <a href="/menu/">menu page</a> and place your order through Zomato for fast doorstep delivery in West Delhi.</p>
+      <ul class="area-list">
+        {% for area in site.areaServed %}<li>{{ area }}</li>{% endfor %}
+      </ul>
+      <p class="button-row"><a class="btn btn-primary" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer">Order on Zomato</a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="faq-title">
+  <div class="container">
+    <h2 id="faq-title">Frequently Asked Questions</h2>
+    <div class="grid grid-2">
+      <article class="card"><h3>Do you deliver daily in Paschim Vihar?</h3><p>Yes, we deliver daily through Zomato in Paschim Vihar and nearby localities.</p></article>
+      <article class="card"><h3>Which dish is most ordered?</h3><p>Rajma Chawal and Chole Rice are our most ordered meals.</p></article>
+      <article class="card"><h3>Is this a dine-in restaurant?</h3><p>No. Annapurna Rasoi is a delivery-focused pure vegetarian cloud kitchen.</p></article>
+      <article class="card"><h3>How can I order quickly?</h3><p>Use our direct Zomato link for quick ordering and live delivery tracking.</p></article>
+    </div>
+  </div>
+</section>

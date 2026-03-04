@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#7A1F2B">
+  <title>{{ page.title }}</title>
+  <meta name="description" content="{{ page.description }}">
+  <meta name="robots" content="index,follow">
+  <link rel="canonical" href="{{ page.canonical }}">
+  <meta property="og:type" content="{{ page.ogType | default('website') }}">
+  <meta property="og:title" content="{{ page.ogTitle | default(page.title) }}">
+  <meta property="og:description" content="{{ page.ogDescription | default(page.description) }}">
+  <meta property="og:image" content="{{ page.ogImage }}">
+  <meta property="og:url" content="{{ page.canonical }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ page.ogTitle | default(page.title) }}">
+  <meta name="twitter:description" content="{{ page.ogDescription | default(page.description) }}">
+  <meta name="twitter:image" content="{{ page.ogImage }}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  {% if page.inlineCritical %}
+  <style>{{ page.inlineCritical }}</style>
+  {% endif %}
+  <link rel="stylesheet" href="/assets/css/style.min.css">
+  {% for schema in schemas %}
+  <script type="application/ld+json">{{ schema | dump | safe }}</script>
+  {% endfor %}
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  {% include "partials/header.njk" %}
+  <main id="main-content" role="main">
+    {{ content | safe }}
+  </main>
+  {% include "partials/footer.njk" %}
+  <a class="floating-cta" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer" aria-label="Order on Zomato">Order on Zomato</a>
+  <script src="/assets/js/script.min.js" defer></script>
+</body>
+</html>
+

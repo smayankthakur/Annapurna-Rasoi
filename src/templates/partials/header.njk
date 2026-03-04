@@ -1,0 +1,14 @@
+<header class="site-header" role="banner">
+  <div class="container nav-row">
+    <a href="/" class="brand" aria-label="{{ site.brand }} home">{{ site.brand }}</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="site-nav" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="site-nav" class="site-nav" aria-label="Primary navigation">
+      {% for item in site.nav %}
+      <a href="{{ item.href }}"{% if page.path == item.href %} aria-current="page"{% endif %}>{{ item.label }}</a>
+      {% endfor %}
+      <a class="btn btn-primary btn-small" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer">Order on Zomato</a>
+    </nav>
+  </div>
+</header>

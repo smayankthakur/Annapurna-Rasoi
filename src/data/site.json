@@ -1,0 +1,106 @@
+{
+  "brand": "Annapurna Rasoi",
+  "domain": "https://www.annapurnarasoi.sitelytc.com",
+  "orderUrl": "https://www.zomato.com/ncr/annapurna-rasoi-2-paschim-vihar-new-delhi/order",
+  "phoneDisplay": "+91 88006 47845",
+  "phoneHref": "tel:+918800647845",
+  "email": "support@annapurnarasoi.sitelytc.com",
+  "address": "Street No. 2, R Z F-210, Nihal Vihar, Nikhil Vihar, Nangloi, New Delhi, Delhi, 110041",
+  "geo": {
+    "lat": "28.663523",
+    "lng": "77.0667528"
+  },
+  "areaServed": [
+    "Paschim Vihar",
+    "Punjabi Bagh",
+    "Peera Garhi",
+    "Nangloi",
+    "Mianwali Nagar",
+    "Rajouri Garden"
+  ],
+  "nav": [
+    { "href": "/", "label": "Home" },
+    { "href": "/menu/", "label": "Menu" },
+    { "href": "/veg-food-delivery-paschim-vihar/", "label": "Delivery Areas" },
+    { "href": "/about/", "label": "About" },
+    { "href": "/contact/", "label": "Contact" }
+  ],
+  "dishes": [
+    {
+      "slug": "rajma-rice",
+      "name": "Rajma Chawal",
+      "title": "Rajma Chawal in Paschim Vihar | Annapurna Rasoi",
+      "metaDescription": "Order fresh Rajma Chawal in Paschim Vihar from Annapurna Rasoi pure veg cloud kitchen.",
+      "price": "119",
+      "image": "rajma-rice-paschim-vihar.webp",
+      "alt": "Rajma Chawal in Paschim Vihar by Annapurna Rasoi",
+      "description": "Slow-cooked rajma gravy with steamed rice for a complete home-style meal.",
+      "longDescription": "Rajma Chawal is one of the most requested comfort meals at Annapurna Rasoi. We soak and simmer premium rajma for a rich gravy, then pair it with fluffy steamed rice for balanced texture and taste. The seasoning is designed for daily meals, making it a practical option for office lunch, student meals, and family dinner orders across Paschim Vihar.",
+      "badge": "Most Ordered"
+    },
+    {
+      "slug": "chole-rice",
+      "name": "Chole Rice",
+      "title": "Chole Rice Delivery in Paschim Vihar | Annapurna Rasoi",
+      "metaDescription": "Fresh Chole Rice delivery in Paschim Vihar from Annapurna Rasoi pure veg kitchen.",
+      "price": "109",
+      "image": "chole-rice-paschim-vihar.webp",
+      "alt": "Chole Rice delivery in Paschim Vihar",
+      "description": "Punjabi-style chole with fluffy rice, perfect for office lunch and dinner.",
+      "longDescription": "Our Chole Rice combines spiced chickpea curry with soft rice in portions built for full, satisfying meals. It is a strong lunch favorite in Paschim Vihar because it travels well, stays flavorful, and gives consistent value. The recipe is prepared fresh every day in our pure veg kitchen with quality checks before dispatch.",
+      "badge": "Lunch Bestseller"
+    },
+    {
+      "slug": "aloo-paratha",
+      "name": "Aloo Paratha",
+      "title": "Aloo Paratha in Paschim Vihar | Annapurna Rasoi",
+      "metaDescription": "Order Aloo Paratha in Paschim Vihar from Annapurna Rasoi pure veg cloud kitchen.",
+      "price": "89",
+      "image": "aloo-paratha-paschim-vihar.webp",
+      "alt": "Aloo Paratha from pure veg cloud kitchen in Paschim Vihar",
+      "description": "Stuffed paratha prepared fresh daily in our pure vegetarian kitchen.",
+      "longDescription": "Aloo Paratha is prepared with seasoned potato filling and cooked to a soft, layered finish. It is a reliable option for customers looking for lighter comfort meals that still feel filling. We pack each order to preserve warmth and texture for short-distance deliveries around Paschim Vihar and nearby West Delhi zones.",
+      "badge": ""
+    },
+    {
+      "slug": "poori-aloo",
+      "name": "Poori Aloo",
+      "title": "Poori Aloo in Paschim Vihar | Annapurna Rasoi",
+      "metaDescription": "Fresh Poori Aloo in Paschim Vihar from Annapurna Rasoi with fast pure veg delivery.",
+      "price": "99",
+      "image": "poori-aloo-paschim-vihar.webp",
+      "alt": "Poori Aloo meal in Paschim Vihar",
+      "description": "Crisp pooris with comforting aloo sabzi for breakfast and dinner cravings.",
+      "longDescription": "Poori Aloo offers crisp pooris and homestyle aloo sabzi in a classic North Indian pairing. It is popular for family orders and weekend brunch-style meals, with packaging designed to keep components fresh and ready to serve. Customers in Paschim Vihar choose this dish for dependable taste and pure vegetarian preparation.",
+      "badge": ""
+    }
+  ],
+  "combos": [
+    {
+      "name": "Office Lunch Combo",
+      "price": "199",
+      "description": "Balanced weekday combo for professionals and students in Paschim Vihar.",
+      "badge": ""
+    },
+    {
+      "name": "Family Feast Combo",
+      "price": "349",
+      "description": "Best-value sharing combo for family dinner and group orders.",
+      "badge": "Best Value"
+    }
+  ],
+  "reviews": [
+    {
+      "text": "Rajma Chawal tastes truly home-style and always arrives fresh.",
+      "name": "Local customer, Paschim Vihar"
+    },
+    {
+      "text": "Chole Rice is balanced and perfect for office lunch orders.",
+      "name": "Working professional, Punjabi Bagh"
+    },
+    {
+      "text": "Consistent pure veg quality and quick delivery every time.",
+      "name": "Family order, Peera Garhi"
+    }
+  ]
+}

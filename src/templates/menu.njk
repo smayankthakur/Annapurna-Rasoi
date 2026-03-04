@@ -1,0 +1,47 @@
+<section class="hero" aria-labelledby="menu-title">
+  <div class="container">
+    <nav class="breadcrumb-nav" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li><a href="/">Home</a></li>
+        <li><span aria-current="page">Menu</span></li>
+      </ol>
+    </nav>
+    <p class="eyebrow">Pure Veg Menu | Paschim Vihar</p>
+    <h1 id="menu-title">Annapurna Rasoi Menu</h1>
+    <p class="subtext">Fresh home-style vegetarian meals and value combos for lunch and dinner delivery in Paschim Vihar.</p>
+  </div>
+</section>
+
+<section class="section" aria-labelledby="menu-items-title">
+  <div class="container">
+    <h2 id="menu-items-title">Most Ordered Veg Dishes</h2>
+    <div class="dish-grid">
+      {% for dish in site.dishes %}
+      <article class="card dish-card">
+        <img class="dish-image" src="/assets/images/{{ dish.image }}" width="640" height="480" loading="lazy" decoding="async" alt="{{ dish.alt }}">
+        <div class="dish-row">
+          <h3><a href="/menu/{{ dish.slug }}/">{{ dish.name }}</a></h3>
+          <span class="price">?{{ dish.price }}</span>
+        </div>
+        {% if dish.badge %}<span class="badge">{{ dish.badge }}</span>{% endif %}
+        <p>{{ dish.description }}</p>
+        <a class="btn btn-secondary" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer">Order on Zomato</a>
+        <p class="mini">Freshly prepared daily. Fast delivery in Paschim Vihar.</p>
+      </article>
+      {% endfor %}
+
+      {% for combo in site.combos %}
+      <article class="card dish-card">
+        <div class="dish-row">
+          <h3>{{ combo.name }}</h3>
+          <span class="price">?{{ combo.price }}</span>
+        </div>
+        {% if combo.badge %}<span class="badge">{{ combo.badge }}</span>{% endif %}
+        <p>{{ combo.description }}</p>
+        <a class="btn btn-secondary" href="{{ site.orderUrl }}" target="_blank" rel="noopener noreferrer">Order on Zomato</a>
+        <p class="mini">Freshly prepared daily. Fast delivery in Paschim Vihar.</p>
+      </article>
+      {% endfor %}
+    </div>
+  </div>
+</section>
